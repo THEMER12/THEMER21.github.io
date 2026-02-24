@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">    
+    <title>Emerson Rojas | Portfolio</title>
+    <style>
+        :root {
+            --font-ibm: "IBM Plex Sans", sans-serif;
+            --font-mono: "IBM Plex Mono", monospace;
+            --color-primary: #3D5A80;
+            --color-secondary: #98C1D9;
+            --color-tertiary: #E0FBFC;
+            --color-accent: #EE6C4D;
+            --color-dark: #293241;
+        }
+        body {
+            font-family: var(--font-ibm);
+            background-color: var(--color-dark);
+            color: var(--color-tertiary);
+        }
+        .font-mono-custom {
+            font-family: var(--font-mono);
+        }
+        .brutalist-shadow {
+            box-shadow: 8px 8px 0px var(--color-secondary);
+            border: 2px solid var(--color-tertiary);
+        }
+        .brutalist-shadow-accent {
+            box-shadow: 12px 12px 0px var(--color-primary);
+            border: 4px solid var(--color-dark);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-[#EE6C4D] selection:text-[#293241]">
+    
+    <header class="border-b-2 border-[#3D5A80] sticky top-0 bg-[#293241] z-50 opacity-95">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-bold text-2xl tracking-tighter text-[#EE6C4D]">ER.</span>
+            <div class="space-x-6 text-sm font-bold uppercase tracking-widest text-[#98C1D9] hidden md:block">
+                <a href="#proyectos" class="hover:text-[#EE6C4D] transition-colors">Proyectos</a>
+                <a href="#experiencia" class="hover:text-[#EE6C4D] transition-colors">Experiencia</a>
+                <a href="#habilidades" class="hover:text-[#EE6C4D] transition-colors">Habilidades</a>
+                <a href="#contacto" class="hover:text-[#EE6C4D] transition-colors">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 mt-20 mb-24">
+        <div class="bg-[#EE6C4D] w-full md:w-4/5 lg:w-3/5 p-8 md:p-12 brutalist-shadow-accent transform -rotate-1">
+            <h1 class="text-6xl md:text-8xl font-black uppercase tracking-tighter text-[#293241] leading-none">Emerson <br> Rojas</h1>
+            <h2 class="text-2xl md:text-4xl uppercase italic font-bold text-[#E0FBFC] mt-4 font-mono-custom">Full Stack Web Developer</h2>
+        </div>
+
+        <div class="mt-20 max-w-2xl border-l-4 border-[#EE6C4D] pl-6 text-[#98C1D9] text-lg leading-relaxed">
+            <p>Soy un Desarrollador Web con formación en Bioinformática. Me considero una persona curiosa, proactiva y con gran capacidad de adaptación, siempre buscando aprender y enfrentar nuevos retos. Destaco por mi compromiso, el trabajo en equipo y mi habilidad para resolver problemas de forma eficiente. Tras mi etapa de prácticas, busco un entorno donde pueda aportar mi esfuerzo y conocimientos en soluciones web, mientras sigo creciendo profesionalmente.</p>
+        </div>
+    </main>
+
+    <section id="proyectos" class="container mx-auto px-6 py-16">
+        <h3 class="text-4xl font-black uppercase mb-12 text-[#E0FBFC] inline-block border-b-4 border-[#98C1D9] pb-2">Proyectos</h3>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <article class="bg-transparent border-2 border-[#98C1D9] brutalist-shadow flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                
+                <div class="h-48 border-b-2 border-[#98C1D9] relative group bg-[#3D5A80]">
+                    
+                    <div id="carousel-phylome" class="flex w-full h-full overflow-x-auto snap-x snap-mandatory scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                        <div id="slide-phy-1" class="w-full h-full flex-shrink-0 snap-center relative">
+                            <img src="/img/phy-1.png" alt="Captura 1" class="w-full h-full object-cover">
+                        </div>
+                        <div id="slide-phy-2" class="w-full h-full flex-shrink-0 snap-center relative">
+                            <img src="https://via.placeholder.com/600x400/293241/EE6C4D?text=PhylomeDB+2" alt="Captura 2" class="w-full h-full object-cover">
+                        </div>
+                        <div id="slide-phy-3" class="w-full h-full flex-shrink-0 snap-center relative">
+                            <img src="https://via.placeholder.com/600x400/98C1D9/293241?text=PhylomeDB+3" alt="Captura 3" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <div class="absolute inset-0 flex items-center justify-between px-2 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity z-10">
+                        <button onclick="document.getElementById('carousel-phylome').scrollBy({left: -300, behavior: 'smooth'})" class="pointer-events-auto bg-[#EE6C4D] text-[#293241] w-8 h-8 flex items-center justify-center font-bold border-2 border-[#293241] shadow-[2px_2px_0px_#293241] hover:bg-[#E0FBFC] transition-colors">←</button>
+                        <button onclick="document.getElementById('carousel-phylome').scrollBy({left: 300, behavior: 'smooth'})" class="pointer-events-auto bg-[#EE6C4D] text-[#293241] w-8 h-8 flex items-center justify-center font-bold border-2 border-[#293241] shadow-[2px_2px_0px_#293241] hover:bg-[#E0FBFC] transition-colors">→</button>
+                    </div>
+
+                    <div class="absolute bottom-2 left-0 right-0 flex justify-center gap-2 z-10">
+                        <a href="#slide-phy-1" class="w-3 h-3 rounded-full bg-[#E0FBFC] border-2 border-[#293241] hover:bg-[#EE6C4D] transition-colors"></a>
+                        <a href="#slide-phy-2" class="w-3 h-3 rounded-full bg-[#E0FBFC] border-2 border-[#293241] hover:bg-[#EE6C4D] transition-colors"></a>
+                        <a href="#slide-phy-3" class="w-3 h-3 rounded-full bg-[#E0FBFC] border-2 border-[#293241] hover:bg-[#EE6C4D] transition-colors"></a>
+                    </div>
+
+                    <span class="absolute top-2 right-2 px-2 py-1 bg-[#E0FBFC] border-2 border-[#293241] shadow-[2px_2px_0px_#293241] z-20">
+                        <img class="h-7" src="img/BSC-blue.svg" alt="BSC">
+                    </span>
+                </div>
+
+                <div class="p-6 flex-grow flex flex-col bg-[#293241]">
+                    <h4 class="text-2xl font-bold text-[#E0FBFC] mb-2 uppercase">PhylomeDB 6</h4>
+                        
+                    <div class="flex flex-wrap gap-2 mb-4 items-center">
+                        <span class="px-2 py-1 flex items-center justify-center transition-transform hover:-translate-y-0.5"><img src="img/logos/Typescript_logo_2020.svg" alt="TypeScript" title="TypeScript" class="h-5 w-auto object-contain"></span>
+                        <span class="px-2 py-1 flex items-center justify-center transition-transform hover:-translate-y-0.5"><img src="img/logos/nextjs-icon.svg" alt="Next.js" title="Next.js" class="h-5 w-auto object-contain"></span>
+                        <span class="px-2 py-1 flex items-center justify-center transition-transform hover:-translate-y-0.5"><img src="img/logos/mariaDB.png" alt="MariaDB" title="MariaDB" class="h-5 w-auto object-contain"></span>
+                        <span class="px-2 py-1 flex items-center justify-center transition-transform hover:-translate-y-0.5"><img src="img/logos/Logo_D3.svg" alt="D3.js" title="D3.js" class="h-5 w-auto object-contain"></span>    
+                        <span class="px-2 py-1 flex items-center justify-center transition-transform hover:-translate-y-0.5"><img src="img/logos/Python-logo-notext.svg" alt="Python" title="Python" class="h-5 w-auto object-contain"></span>  
+                        <span class="px-2 py-1 flex items-center justify-center transition-transform hover:-translate-y-0.5"><img src="img/logos/FastAPI_logo.svg" alt="FastAPI" title="FastAPI" class="h-5 w-auto object-contain"></span>          
+                    </div>
+
+                    <p class="text-[#98C1D9] text-sm mb-6 flex-grow">Participación directa en la migración completa de la plataforma de la versión 5 a la 6, modernizando la infraestructura tanto en la parte del frontend como del backend para mejorar su rendimiento y usabilidad.</p>
+                    
+                    <div class="mt-auto">
+                        <a href="https://beta.phylomedb.org" target="_blank" rel="noopener noreferrer" class="font-mono-custom inline-block bg-transparent border-2 border-[#EE6C4D] text-[#EE6C4D] hover:bg-[#EE6C4D] hover:text-[#293241] px-4 py-2 uppercase text-xs font-bold transition-colors">
+                            Ver web ↗
+                        </a>
+                    </div>
+                </div>
+            </article>
+<article class="bg-transparent border-2 border-[#98C1D9] brutalist-shadow flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                
+                <div class="h-48 border-b-2 border-[#98C1D9] relative group bg-[#3D5A80] cursor-pointer overflow-hidden" onclick="openDiskmapModal()">
+                    <img src="img/diskmap/disk-1.png" alt="Captura de DiskMap 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    
+                    <div class="absolute inset-0 bg-[#293241]/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10">
+                    </div>
+
+                    <span class="absolute top-2 right-2 font-mono-custom bg-[#98C1D9] text-[#293241] px-2 py-1 text-xs font-bold uppercase z-20 border-2 border-[#293241] shadow-[2px_2px_0px_#293241]">BSC</span>
+                </div>
+
+                <div class="p-6 flex-grow flex flex-col bg-[#293241]">
+                    <h4 class="text-2xl font-bold text-[#E0FBFC] mb-2 uppercase">DiskMap</h4>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4 items-center">
+                        <span class="px-2 py-1 flex items-center justify-center transition-transform hover:-translate-y-0.5">
+                            <img src="img/logos/Typescript_logo_2020.svg" alt="TypeScript" title="TypeScript" class="h-5 w-auto object-contain">
+                        </span>
+                        <span class="px-2 py-1 flex items-center justify-center transition-transform hover:-translate-y-0.5">
+                            <img src="img/logos/Python-logo-notext.svg" alt="Python" title="Python" class="h-5 w-auto object-contain">
+                        </span>
+                    </div>
+
+                    <p class="text-[#98C1D9] text-sm mb-4 flex-grow">Aplicación web privada desarrollada internamente para el BSC. Su objetivo principal es la monitorización detallada del uso de disco y gestión de almacenamiento de la cuota del mare nostrum del grupo, mediante dashboards interactivos y consumo de APIs.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="experiencia" class="container mx-auto px-6 py-16">
+        <h3 class="text-4xl font-black uppercase mb-12 text-[#E0FBFC] inline-block border-b-4 border-[#EE6C4D] pb-2">Experiencia</h3>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-[#3D5A80] p-8 brutalist-shadow hover:-translate-y-2 transition-transform duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h4 class="text-2xl font-bold text-[#E0FBFC]">Desarrollador Web</h4>
+                    <span class="font-mono-custom bg-[#EE6C4D] text-[#293241] px-2 py-1 text-sm font-bold">2024</span>
+                </div>
+                <p class="text-[#98C1D9] italic mb-6">Barcelona Supercomputing Center (BSC)</p>
+                <ul class="list-none space-y-3 text-[#E0FBFC]">
+                    <li class="flex items-start"><span class="text-[#EE6C4D] mr-2">▹</span> Migración y mejora de PhylomeDB (frontend y backend).</li>
+                    <li class="flex items-start"><span class="text-[#EE6C4D] mr-2">▹</span> Desarrollo de DiskMap para la monitorización de disco.</li>
+                    <li class="flex items-start"><span class="text-[#EE6C4D] mr-2">▹</span> Dashboards interactivos con ECharts y D3.js.</li>
+                    <li class="flex items-start"><span class="text-[#EE6C4D] mr-2">▹</span> Desarrollo de APIs backend con Python (FastAPI).</li>
+                </ul>
+            </div>
+
+            <div class="bg-transparent border-2 border-[#3D5A80] p-8 hover:bg-[#3D5A80] transition-colors duration-300">
+                <div class="flex justify-between items-start mb-4">
+                    <h4 class="text-2xl font-bold text-[#E0FBFC]">Técnico Informático</h4>
+                    <span class="font-mono-custom bg-[#98C1D9] text-[#293241] px-2 py-1 text-sm font-bold">2021</span>
+                </div>
+                <p class="text-[#98C1D9] italic mb-6">Escola el Polvorí</p>
+                <ul class="list-none space-y-3 text-[#E0FBFC]">
+                    <li class="flex items-start"><span class="text-[#98C1D9] mr-2">▹</span> Soporte técnico y resolución de incidencias a usuarios finales.</li>
+                    <li class="flex items-start"><span class="text-[#98C1D9] mr-2">▹</span> Diagnóstico y reparación de hardware y software (Windows y Linux).</li>
+                    <li class="flex items-start"><span class="text-[#98C1D9] mr-2">▹</span> Gestión básica de redes locales y mantenimiento.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="container mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div>
+            <h3 class="text-4xl font-black uppercase mb-12 text-[#E0FBFC] inline-block border-b-4 border-[#EE6C4D] pb-2">Tech Stack</h3>
+            <div class="flex flex-wrap gap-3 font-mono-custom text-sm">
+                <span class="border border-[#EE6C4D] text-[#EE6C4D] px-4 py-2 uppercase">HTML5/CSS3</span>
+                <span class="border border-[#EE6C4D] text-[#EE6C4D] px-4 py-2 uppercase">Tailwind</span>
+                <span class="border border-[#EE6C4D] text-[#EE6C4D] px-4 py-2 uppercase">JS / TS</span>
+                <span class="bg-[#EE6C4D] text-[#293241] px-4 py-2 font-bold uppercase">React</span>
+                <span class="bg-[#EE6C4D] text-[#293241] px-4 py-2 font-bold uppercase">Svelte</span>
+                <span class="border border-[#EE6C4D] text-[#EE6C4D] px-4 py-2 uppercase">Angular</span>
+                <span class="border border-[#98C1D9] text-[#98C1D9] px-4 py-2 uppercase">Python</span>
+                <span class="border border-[#98C1D9] text-[#98C1D9] px-4 py-2 uppercase">Java</span>
+                <span class="bg-[#98C1D9] text-[#293241] px-4 py-2 font-bold uppercase">MySQL</span>
+                <span class="bg-[#98C1D9] text-[#293241] px-4 py-2 font-bold uppercase">MongoDB</span>
+                <span class="border border-[#98C1D9] text-[#98C1D9] px-4 py-2 uppercase">Docker</span>
+                <span class="border border-[#98C1D9] text-[#98C1D9] px-4 py-2 uppercase">Git</span>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-4xl font-black uppercase mb-12 text-[#E0FBFC] inline-block border-b-4 border-[#98C1D9] pb-2">Formación</h3>
+            <div class="space-y-8 border-l-2 border-[#3D5A80] pl-6 relative">
+                <div class="relative">
+                    <div class="absolute -left-[33px] top-1 w-4 h-4 bg-[#EE6C4D] rounded-full"></div>
+                    <h5 class="text-xl font-bold text-[#E0FBFC]">Desarrollo de Aplicaciones Web Bioinformáticas</h5>
+                    <p class="text-[#98C1D9] font-mono-custom text-sm">Institut Provençana | 2023</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[33px] top-1 w-4 h-4 bg-[#98C1D9] rounded-full"></div>
+                    <h5 class="text-xl font-bold text-[#E0FBFC]">Sistemas Microinformáticos y Redes</h5>
+                    <p class="text-[#98C1D9] font-mono-custom text-sm">Institut Provençana | 2020</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-[#3D5A80] border-t-4 border-[#EE6C4D] mt-20">
+        <div class="container mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <h2 class="text-4xl font-black uppercase text-[#E0FBFC] mb-2">Hablemos</h2>
+                <p class="text-[#98C1D9]">Abierto a nuevas oportunidades laborales.</p>
+            </div>
+            <div class="flex flex-col items-end space-y-2 font-mono-custom text-lg">
+                <a href="mailto:emersonrojas21rj@gmail.com" class="text-[#E0FBFC] hover:text-[#EE6C4D] transition-colors">emersonrojas21rj@gmail.com</a>
+                <a href="tel:693027891" class="text-[#E0FBFC] hover:text-[#EE6C4D] transition-colors">693 02 78 91</a>
+                <a href="#" class="text-[#E0FBFC] hover:text-[#EE6C4D] transition-colors underline decoration-[#EE6C4D] decoration-2 underline-offset-4">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <div id="modal-diskmap" class="fixed inset-0 z-[100] hidden flex flex-col items-center justify-center bg-[#293241]/95 backdrop-blur-sm transition-opacity">
+        
+        <button onclick="closeDiskmapModal()" class="absolute top-6 right-6 lg:top-10 lg:right-10 bg-[#EE6C4D] text-[#293241] w-12 h-12 flex items-center justify-center font-bold border-4 border-[#293241] shadow-[4px_4px_0px_#98C1D9] hover:bg-[#E0FBFC] text-2xl z-50 transition-colors">X</button>
+        
+        <div class="relative w-11/12 md:w-4/5 h-2/3 md:h-4/5 border-4 border-[#98C1D9] bg-[#3D5A80] shadow-[8px_8px_0px_#EE6C4D]">
+            
+            <div id="modal-carousel-diskmap" class="flex w-full h-full overflow-x-auto snap-x snap-mandatory scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                <img src="img/diskmap/disk-1.png" alt="Captura 1" class="w-full h-full object-contain flex-shrink-0 snap-center p-2 bg-[#293241]">
+                <img src="img/diskmap/disk-2.png" alt="Captura 2" class="w-full h-full object-contain flex-shrink-0 snap-center p-2 bg-[#293241]">
+                <img src="img/diskmap/disk-3.png" alt="Captura 3" class="w-full h-full object-contain flex-shrink-0 snap-center p-2 bg-[#293241]">
+                <img src="img/diskmap/disk-4.png" alt="Captura 4" class="w-full h-full object-contain flex-shrink-0 snap-center p-2 bg-[#293241]">
+                <img src="img/diskmap/disk-5.png" alt="Captura 5" class="w-full h-full object-contain flex-shrink-0 snap-center p-2 bg-[#293241]">
+                <img src="img/diskmap/disk-6.png" alt="Captura 6" class="w-full h-full object-contain flex-shrink-0 snap-center p-2 bg-[#293241]">
+            </div>
+
+            <button onclick="document.getElementById('modal-carousel-diskmap').scrollBy({left: -window.innerWidth * 0.5, behavior: 'smooth'})" class="absolute left-0 md:-left-6 top-1/2 -translate-y-1/2 bg-[#EE6C4D] text-[#293241] w-12 h-12 flex items-center justify-center font-bold border-4 border-[#293241] hover:bg-[#E0FBFC] text-2xl z-10 shadow-[4px_4px_0px_#293241]">←</button>
+            <button onclick="document.getElementById('modal-carousel-diskmap').scrollBy({left: window.innerWidth * 0.5, behavior: 'smooth'})" class="absolute right-0 md:-right-6 top-1/2 -translate-y-1/2 bg-[#EE6C4D] text-[#293241] w-12 h-12 flex items-center justify-center font-bold border-4 border-[#293241] hover:bg-[#E0FBFC] text-2xl z-10 shadow-[4px_4px_0px_#293241]">→</button>
+        </div>
+    </div>
+    <script>
+        function openDiskmapModal() {
+            document.getElementById('modal-diskmap').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        function closeDiskmapModal() {
+            document.getElementById('modal-diskmap').classList.add('hidden');
+            document.body.style.overflow = 'auto'; 
+        }
+        
+        function openPhylomeModal() {
+            document.getElementById('modal-phylome').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePhylomeModal() {
+            document.getElementById('modal-phylome').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>
