@@ -72,3 +72,14 @@ i{
     background: var(--primary-color);
     padding: 3px 9px;
 }
+.proj-1 {
+    color: var(--accent-color);
+}
+
+#projects{
+    background-color: var(--secondary-color);
+}
+
+.proj-2 {
+    color: var(--secondary-color);
+}
