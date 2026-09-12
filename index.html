@@ -1,224 +1,151 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emerson Rojas</title>
-    <meta name="description" content="Portfolio profesional de Emerson Rojas, Desarrollador Full Stack especializado en Bioinformática.">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <title>Emer</title>
 </head>
-<body>
-    <header>
-        <nav class="flex items-center justify-end p-8 text-xl bg-black">
-            <ul class="flex nav-links uppercase font-bold gap-8 text-2xl">
-                <li><a class="relative inline-block group hover:transition duration-200" href="#experience">experience<span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-current transition-all duration-800 group-hover:w-full"></span></a></li>
-                <li><a class="relative inline-block group hover:transition duration-200" href="#projects">projects<span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-current transition-all duration-800 group-hover:w-full"></span></a></li>
-                <li><a class="relative inline-block group hover:transition duration-200" href="#contact">contact<span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-current transition-all duration-800 group-hover:w-full"></span></a></li>
+
+<body class="bg-zinc-100 font-['IBM_Plex_Sans']">
+    <header class="w-full">
+        <nav class="mx-auto flex justify-end px-30 py-5">
+            <ul class="flex gap-20 text-xl tracking-wide">
+                <li>
+                    <a href="#experience" class="transition-colors hover:text-zinc-500 uppercase">
+                        Experience
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" class="transition-colors hover:text-zinc-500 uppercase">
+                        projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="transition-colors hover:text-zinc-500 uppercase">
+                        contact
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
-    <main class="min-h-screen flex flex-col">
-        <section class="flex">
-            <div class="max-w-7xl w-1/2 p-40">
-                <div>
-                    <h1 class="text-huge uppercase text-white">Emerson<br/><i class="italic">Rojas</i></h1>
-                </div>
-                <div class="flex items-center gap-6 mt-10 md:mt-12">
-                    <div class="w-12 md:w-16 h-[1px] bg-line"></div>
-                    <span class="text-xs md:text-sm uppercase tracking-[0.25em] text-[#FFD60A]/90 font-bold">
-                        Full Stack Developer & IT Technician
-                    </span>
-                </div>
+    <!-- about me -->
+    <main class="h-screen w-full">
+        <div class="grid grid-cols-6 gap-4 mt-30">
+            <div class="col-span-3 col-start-1 ... z-10 px-20">
+                <h1 class="text-7xl">EMERSON</h1>
+                <h1 class="text-7xl italic">ROJAS.</h1>
+                <h1 class="text-7xl text-[#d54d4f]">WEB DEV. / IT TECH.</h1>
+                <h1 class="text-7xl text-[#d54d4f]">BCN-ESP № 22-MMIII</h1>
             </div>
-            <div class="w-1/2 bg-dark text-white bg-black">
-                <div class="flex flex-col justify-center h-full p-16">
-                    <p class="text-3xl leading-relaxed font-light text-white/90">
-                        I'm a curious person who enjoys learning, improving, and taking on new challenges. 
-                        I have experience working as a <span class="font-extrabold text-white">Full Stack Developer</span> 
-                        and <span class="font-extrabold text-section-2">IT Technician</span>.
-                    </p>
-                    <p class="text-section-2/80 mt-5 text-xl leading-relaxed">
-                        I've worked with technologies such as 
-                        <span class="text-section-2 font-semibold border-b border-primary/40 pb-px">Python, FastAPI, Next.js, Vue.js, React, and TypeScript</span>. 
-                        My focus is on building scalable web solutions and maintaining robust systems. 
+            <div class="col-start-1 col-end-7 relative z-0 -mt-40 bg-black px-10 pt-52 pb-20 text-white">
+                <div class="mx-auto max-w-5xl">
+                    <p class="max-w-5xl text-2xl leading-relaxed tracking-wide uppercase">
+                        I'm a curious person who enjoys learning, improving, and taking on new challenges.
+                        I have experience working as a <span class="text-[#d54d4f]">Full Stack Developer</span> and
+                        <span class="text-[#d54d4f]">IT Technician</span>.
+                        I've worked with technologies such as <span class="text-[#d54d4f]">Python</span>, <span
+                            class="text-[#d54d4f]">FastAPI</span>, <span class="text-[#d54d4f]">Next.js</span>, <span
+                            class="text-[#d54d4f]">Vue.js</span>, <span class="text-[#d54d4f]">React</span>, and <span
+                            class="text-[#d54d4f]">TypeScript</span>.
+                        My focus is on building scalable web solutions and maintaining robust systems.
                         I'm always experimenting with new ideas in personal projects to keep my skills sharp.
                     </p>
                 </div>
             </div>
-        </section>
-        <section id="experience" class="bg-white px-50 py-20">
-            <h1 class="text-6xl font-black uppercase tracking-tighter text-black mb-10 pl-10 italic">Experience</h1> 
-                <div class="m-10 border-solid border-2 max-w flex relative">
-                    <div class="w-1/2 p-8 border-r-2 border-solid relative">
-                        <div class="flex justify-between items-center mb-6">
-                            <div class="border-2 border-solid border-black p-2 font-bold text-sm bg-amber-50">2025 - 2026</div>
-                            <div class="absolute top-0 right-0 p-8 text-6xl text-gray-200 font-extrabold -z-10">01</div>
-                        </div>
-                        <div class="mb-6">
-                            <h1 class="text-3xl font-extrabold mb-1">Web Developer</h1>
-                            <h2 class="text-sm font-bold text-gray-600 tracking-wide">BARCELONA SUPERCOMPUTING CENTER</h2>
-                        </div>
-                        <div class="text-gray-700 text-base leading-relaxed mb-10">
-                            <p class="mb-4">Worked on the migration and improvement of PhylomeDB6, contributing to both frontend and backend development. Focused on data visualization with D3.js, transforming SQL database information into interactive graphs and improving UI usability.</p>
-                            <p>Also developed DiskMap, an internal tool for monitoring disk usage in MareNostrum, displayed storage analysis, directory structures, and usage dashboards on the frontend.</p>
-                        </div>
-                        <div class="flex flex-wrap gap-2 text-xs font-bold text-black tracking-wider uppercase mt-auto">
-                            <span class="border-2 border-solid border-black p-2">SVELTE</span>
-                            <span class="border-2 border-solid border-black p-2">REACT.JS</span>
-                            <span class="border-2 border-solid border-black p-2">TYPESCRIPT</span>
-                            <span class="border-2 border-solid border-black p-2">FASTAPI</span>
-                            <span class="border-2 border-solid border-black p-2">NEXT.JS</span>
-                            <span class="border-2 border-solid border-black p-2">DOCKER</span>
-                            <span class="border-2 border-solid border-black p-2">PYTHON</span>
-                            <span class="border-2 border-solid border-black p-2">D3.JS</span>
-                        </div>
-                    </div>
-
-                    <div class="w-1/2 p-8 relative">
-                        <div class="flex justify-between items-center mb-6">
-                            <div class="border-2 border-solid border-black p-2 font-bold text-sm bg-amber-50">2022 - 2023</div>
-                            <div class="absolute top-0 right-0 p-8 text-6xl text-gray-200 font-extrabold -z-10">02</div>
-                        </div>
-                        <div class="mb-6">
-                            <h1 class="text-3xl font-extrabold mb-1">IT Technician</h1>
-                            <h2 class="text-sm font-bold text-gray-600 tracking-wide uppercase">EL POLVORI</h2>
-                        </div>
-                        <div class="text-gray-700 text-base leading-relaxed mb-10">
-                            <p class="mb-4">Provided full technical support across the school's IT infrastructure, ensuring the correct operation of computers, classrooms, networks, and internal systems used daily by teachers and students.</p>
-                            <p>My responsibilities included hardware maintenance, equipment repair, software installation, network troubleshooting, user support, and resolving technical incidents quickly to minimize downtime.</p>
-                        </div>
-                        <div class="flex flex-wrap gap-2 text-xs font-bold text-black tracking-wider uppercase mt-auto">
-                            <span class="border-2 border-solid border-black p-2">HARDWARE</span>
-                            <span class="border-2 border-solid border-black p-2">IT SUPPORT</span>
-                            <span class="border-2 border-solid border-black p-2">NETWORKING</span>
-                        </div>
+        </div>
+<!-- experience -->
+        <div class="mt-10 p-30 ml-50">
+            <div class="col-span-4 mb-10">
+                <h1 id="experience" class="text-6xl italic">EXPERIENCE</h1>
+            </div>
+            <div class="grid grid-cols-4 gap-20">
+                <!-- bsc -->
+                <div class="col-start-1 col-end-2">
+                    <img src="/job-cards/bsc.png" alt="Barcelona Supercomputing Center" class="w-full h-130 object-cover object-bottom">
+                    <div class="rotate-270 -translate-y-70 -translate-x-35">
+                        <h1 class="">BARCELONA SUPERCOMPUTING</h1>
+                        <h1 class=" italic">CENTER</h1>
+                        <h1 class=" text-[#d54d4f]">BCN-ESP 41.3974° N, 2.1312° E</h1>
                     </div>
                 </div>
+                <div class="col-start-2 col-end-4">
+                    <p class="text-xl tracking-wide">
+                        2025 — 2026
+                    </p>
+                    <h1 class="text-4xl mt-6 uppercase italic">
+                        Web Developer
+                    </h1>
+                    <h2 class="text-2xl text-[#d54d4f] mt-1">
+                        BARCELONA SUPERCOMPUTING CENTER
+                    </h2>
+                    <p class="text-xl leading-relaxed mt-6">
+                        Worked on the migration and improvement of PhylomeDB6, contributing
+                        to both frontend and backend development. Focused on data
+                        visualization with D3.js, transforming SQL database information
+                        into interactive graphs and improving UI usability.
+                    </p>
+                    <p class="text-xl leading-relaxed mt-5">
+                        Also developed DiskMap, an internal tool for monitoring disk usage
+                        in MareNostrum, displaying storage analysis, directory structures,
+                        and usage dashboards on the frontend.
+                    </p>
+                    <p class="text-lg text-[#d54d4f] mt-8 tracking-wide bg-black px-4 py-2 w-fit rounded-lg">
+                        SVELTE · REACT · JS · TYPESCRIPT · FASTAPI · NEXT.JS · DOCKER · PYTHON · D3.JS
+                    </p>
+                </div>
+                <!-- gene -->
+                <div class="col-start-1 col-end-3">
+                    <p class="text-xl tracking-wide">
+                        2026 — PRESENT
+                    </p>
+                    <h1 class="text-4xl mt-6 uppercase italic">
+                        IT Technician
+                    </h1>
+                    <h2 class="text-2xl text-[#d54d4f] mt-1 uppercase">
+                        Administrative Campus of the GENERALITAT DE CATALUNYA
+                    </h2>
 
-        </section>
-        <section id="projects" class="">
-            <h1 class="text-6xl font-black uppercase tracking-tighter mb-12 pl-10 italic mt-20">projects</h1> 
-            <!-- phylomedb6 -->
-            <div class="flex">
-                <div class="w-1/2 pr-6 flex flex-col justify-center ml-30">
-                    <div class="mb-6">
-                        <h2 class="proj-1 text-4xl font-extrabold text-white mb-1">PhylomeDB6</h2>
-                    </div>
-                    <div class="text-sm md:text-xl leading-relaxed space-y-4">
-                        <p>
-                            Actively collaborated on the migration of <strong>PhylomeDB</strong> from version 5 to 6, 
-                            working in a <em>Full Stack</em> environment to integrate pending features and resolve 
-                            bugs in the legacy code. I supported the user interface update using 
-                            <strong>Tailwind CSS</strong>, modernizing outdated components, and participated in the 
-                            development of interactive charts using <strong>D3.js</strong>.
-                        </p>
-                        <p>
-                            Throughout the process, I assisted in optimizing the <strong>MariaDB</strong> database, 
-                            ensuring the application of security best practices in the code and updating critical 
-                            dependencies. Additionally, I worked collaboratively on the application deployment, 
-                            gaining hands-on experience and assisting in the environment setup with <strong>Docker Compose</strong>.
-                        </p>
+                    <p class="text-xl leading-relaxed mt-6">
+                        Providing on-site IT support within the administrative district,
+                        resolving hardware, software, network, and user-related incidents
+                        through a ticket-based support system.
+                    </p>
+
+                    <p class="text-xl leading-relaxed mt-5">
+                        Managing user account lifecycle processes, including new user
+                        registrations and account deactivations, as well as assisting
+                        employees with day-to-day technical issues.
+                    </p>
+
+                    <p class="text-lg text-[#d54d4f] mt-8 tracking-wide bg-black px-4 py-2 w-fit rounded-lg">
+                        IT SUPPORT · TICKETING · WINDOWS · HARDWARE · NETWORKING · USER MANAGEMENT
+                    </p>
+
+                </div>
+                <div class="col-start-3 col-end-4">
+                    <img src="/job-cards/bsc.png" alt="Generalitat de Catalunya" class="w-full h-130 object-cover object-bottom">
+                    <div class="rotate-270 -translate-y-70 translate-x-30">
+                        <h1 class="uppercase">Administrative Campus of the</h1>
+                        <h1 class=" italic uppercase">Generalitat de Catalunya</h1>
+                        <h1 class=" text-[#d54d4f]">BCN-ESP 41.3566° N, 2.1383° E</h1>
                     </div>
                 </div>
-                <div class="w-1/2">
-                    <div id="controls-carousel" class="relative w-full group" data-carousel="static">
-                        <div class="relative h-56 overflow-hidden rounded-base md:h-96 border-2 border-black">
-                            <div class="duration-700 ease-in-out" data-carousel-item>
-                                <img src="/img/phylomedb/phy-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                            </div>
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="/img/phylomedb/phylo-2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                            </div>
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="/img/phylomedb/phylo-3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                            </div>
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="/img/phylomedb/phylo-5.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                            </div>
-                        </div>
-                        
-                        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity duration-300" data-carousel-prev>
-                            <span class="inline-flex items-center justify-center w-10 h-10 border-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-200">
-                                <svg class="w-5 h-5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m15 19-7-7 7-7"/>
-                                </svg>
-                                <span class="sr-only">Previous</span>
-                            </span>
-                        </button>
-                        
-                        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity duration-300" data-carousel-next>
-                            <span class="inline-flex items-center justify-center w-10 h-10 border-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-200">
-                                <svg class="w-5 h-5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m9 5 7 7-7 7"/>
-                                </svg>
-                                <span class="sr-only">Next</span>
-                            </span>
-                        </button>
-                    </div>
-                </div>                 
             </div>
-            <!-- diskmap -->
-            <div class="flex mt-50 bg-black py-20">
-                <div class="w-1/2">
-                    <div id="controls-carousel" class="relative w-full group" data-carousel="static">
-                        <div class="relative h-56 overflow-hidden rounded-base md:h-96">
-                            <div class="duration-700 ease-in-out" data-carousel-item>
-                                <img src="/img/diskmap/disk-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                            </div>
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="/img/diskmap/disk-2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                            </div>
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="/img/diskmap/disk-3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                            </div>
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="/img/diskmap/disk-4.png" class="absolute block w-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                            </div>
-                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="/img/diskmap/disk-5.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                            </div>
-                        </div>
-                        
-                        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity duration-300" data-carousel-prev>
-                            <span class="inline-flex items-center justify-center w-10 h-10 border-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-200">
-                                <svg class="w-5 h-5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m15 19-7-7 7-7"/>
-                                </svg>
-                                <span class="sr-only">Previous</span>
-                            </span>
-                        </button>
-                        
-                        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer focus:outline-none opacity-0 group-hover:opacity-100 transition-opacity duration-300" data-carousel-next>
-                            <span class="inline-flex items-center justify-center w-10 h-10 border-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-200">
-                                <svg class="w-5 h-5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m9 5 7 7-7 7"/>
-                                </svg>
-                                <span class="sr-only">Next</span>
-                            </span>
-                        </button>
-                    </div>
-                </div>  
-                <div class="w-1/2 pr-6 flex flex-col justify-center ml-30">
-                    <div class="mb-6">
-                        <h2 class="text-4xl font-extrabold text-white mb-1 proj-2">DiskMap</h2>
-                    </div>
-                    <div class="text-white text-sm md:text-xl leading-relaxed space-y-4">
-                        <p>
-                            Developed <strong>DiskMap</strong>, an internal web application for my research group at the <strong>BSC (Barcelona Supercomputing Center)</strong>, designed to monitor and visualize disk space usage. The tool provides clear insights into storage capacities, breakdown of files and folders, and specific group quota allocations.
-                        </p>
-                        <p>
-                            Built a high-performance, decoupled architecture using <strong>FastAPI (Python)</strong> for a lightweight backend and <strong>Vue.js</strong> paired with <strong>Tailwind CSS</strong> for a responsive, modern interface. Implemented interactive, data-driven dashboards using <strong>Apache ECharts</strong> and managed data persistence efficiently with <strong>SQLite</strong>.
-                        </p>
-                    </div>
-                </div>               
+        </div>
+        <!-- projects -->
+        <div class="bg-[#d54d4f] mt-20">
+            <div class="p-30 flex justify-end">
+                <h1 id="projects" class="text-6xl italic">PROJECTS</h1>
             </div>
-        </section>
+        </div>
     </main>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
 </body>
+
 </html>
