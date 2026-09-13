@@ -14,8 +14,8 @@
 
 <body class="bg-zinc-100 font-['IBM_Plex_Sans']">
     <header class="w-full">
-        <nav class="mx-auto flex justify-end px-30 py-5">
-            <ul class="flex gap-20 text-xl tracking-wide">
+        <nav class="mx-auto flex flex-wrap justify-center gap-6 px-4 py-4 text-sm sm:gap-10 sm:text-base lg:justify-end lg:gap-20 lg:px-30 lg:py-5 lg:text-xl">
+            <ul class="flex flex-wrap justify-center gap-6 sm:gap-10 lg:gap-20 tracking-wide">
                 <li>
                     <a href="#experience" class="transition-colors hover:text-zinc-500 uppercase">
                         Experience
@@ -35,17 +35,17 @@
         </nav>
     </header>
     <!-- about me -->
-    <main class="h-screen w-full">
-        <div class="grid grid-cols-6 gap-4 mt-30">
-            <div class="col-span-3 col-start-1 ... z-10 px-20">
-                <h1 class="text-7xl">EMERSON</h1>
-                <h1 class="text-7xl italic">ROJAS.</h1>
-                <h1 class="text-7xl text-[#d54d4f]">WEB DEV. / IT TECH.</h1>
-                <h1 class="text-7xl text-[#d54d4f]">BCN-ESP № 22-MMIII</h1>
+    <main class="w-full lg:h-screen">
+        <div class="grid grid-cols-1 gap-4 mt-10 lg:grid-cols-6 lg:mt-30">
+            <div class="col-span-1 z-10 px-5 sm:px-8 lg:col-span-3 lg:col-start-1 lg:px-20">
+                <h1 class="text-2xl sm:text-4xl lg:text-7xl">EMERSON</h1>
+                <h1 class="text-2xl sm:text-4xl lg:text-7xl italic">ROJAS.</h1>
+                <h1 class="text-2xl sm:text-4xl lg:text-7xl text-[#d54d4f]">WEB DEV. / IT TECH.</h1>
+                <h1 class="text-2xl sm:text-4xl lg:text-7xl text-[#d54d4f]">BCN-ESP № 22-MMIII</h1>
             </div>
-            <div class="col-start-1 col-end-7 relative z-0 -mt-40 bg-black px-10 pt-52 pb-20 text-white">
+            <div class="col-span-1 relative z-0 mt-8 bg-black px-5 pt-8 pb-8 text-white sm:px-8 lg:col-start-1 lg:col-end-7 lg:-mt-40 lg:px-10 lg:pt-52 lg:pb-20">
                 <div class="mx-auto max-w-5xl">
-                    <p class="max-w-5xl text-2xl leading-relaxed tracking-wide uppercase">
+                    <p class="max-w-5xl text-base leading-relaxed tracking-normal uppercase sm:text-lg lg:text-2xl lg:tracking-wide">
                         I'm a curious person who enjoys learning, improving, and taking on new challenges.
                         I have experience working as a <span class="text-[#d54d4f]">Full Stack Developer</span> and
                         <span class="text-[#d54d4f]">IT Technician</span>.
@@ -59,78 +59,80 @@
                 </div>
             </div>
         </div>
-<!-- experience -->
-        <div class="mt-10 p-30 ml-50">
-            <div class="col-span-4 mb-10">
-                <h1 id="experience" class="text-6xl italic">EXPERIENCE</h1>
+        <!-- experience -->
+        <div class="mt-10 px-5 py-10 sm:px-8 lg:p-30 lg:ml-50">
+            <div class="mb-8 lg:col-span-4 lg:mb-10">
+                <h1 id="experience" class="text-3xl italic lg:text-6xl">EXPERIENCE</h1>
             </div>
-            <div class="grid grid-cols-4 gap-20">
+            <div class="grid grid-cols-1 gap-12 lg:grid-cols-4 lg:gap-20">
                 <!-- bsc -->
-                <div class="col-start-1 col-end-2">
-                    <img src="/job-cards/bsc.png" alt="Barcelona Supercomputing Center" class="w-full h-130 object-cover object-bottom">
-                    <div class="rotate-270 -translate-y-70 -translate-x-35">
+                <div class="lg:col-start-1 lg:col-end-2">
+                    <img src="/job-cards/bsc.png" alt="Barcelona Supercomputing Center"
+                        class="w-full h-56 object-cover object-bottom sm:h-64 lg:h-130">
+                    <div class="mt-4 lg:mt-0 lg:rotate-270 lg:-translate-y-70 lg:-translate-x-35">
                         <h1 class="">BARCELONA SUPERCOMPUTING</h1>
                         <h1 class=" italic">CENTER</h1>
                         <h1 class=" text-[#d54d4f]">BCN-ESP 41.3974° N, 2.1312° E</h1>
                     </div>
                 </div>
-                <div class="col-start-2 col-end-4">
-                    <p class="text-xl tracking-wide">
+                <div class="lg:col-start-2 lg:col-end-4">
+                    <p class="text-base tracking-wide sm:text-lg lg:text-xl">
                         2025 — 2026
                     </p>
-                    <h1 class="text-4xl mt-6 uppercase italic">
+                    <h1 class="text-2xl mt-4 uppercase italic sm:text-3xl lg:text-4xl lg:mt-6">
                         Web Developer
                     </h1>
-                    <h2 class="text-2xl text-[#d54d4f] mt-1">
+                    <h2 class="text-lg text-[#d54d4f] mt-1 sm:text-xl lg:text-2xl">
                         BARCELONA SUPERCOMPUTING CENTER
                     </h2>
-                    <p class="text-xl leading-relaxed mt-6">
+                    <p class="text-base leading-relaxed mt-4 sm:text-lg lg:text-xl lg:mt-6">
                         Worked on the migration and improvement of PhylomeDB6, contributing
                         to both frontend and backend development. Focused on data
                         visualization with D3.js, transforming SQL database information
                         into interactive graphs and improving UI usability.
                     </p>
-                    <p class="text-xl leading-relaxed mt-5">
+                    <p class="text-base leading-relaxed mt-4 sm:text-lg lg:text-xl lg:mt-5">
                         Also developed DiskMap, an internal tool for monitoring disk usage
                         in MareNostrum, displaying storage analysis, directory structures,
                         and usage dashboards on the frontend.
                     </p>
-                    <p class="text-lg text-[#d54d4f] mt-8 tracking-wide bg-black px-4 py-2 w-fit rounded-lg">
+                    <p class="text-sm text-[#d54d4f] mt-6 tracking-wide bg-black px-3 py-1.5 w-fit rounded-lg sm:text-base lg:text-lg lg:mt-8 lg:px-4 lg:py-2">
                         SVELTE · REACT · JS · TYPESCRIPT · FASTAPI · NEXT.JS · DOCKER · PYTHON · D3.JS
                     </p>
                 </div>
                 <!-- gene -->
-                <div class="col-start-1 col-end-3">
-                    <p class="text-xl tracking-wide">
+                <div class="lg:col-start-1 lg:col-end-3">
+                    <p class="text-base tracking-wide sm:text-lg lg:text-xl">
                         2026 — PRESENT
                     </p>
-                    <h1 class="text-4xl mt-6 uppercase italic">
+                    <h1 class="text-2xl mt-4 uppercase italic sm:text-3xl lg:text-4xl lg:mt-6">
                         IT Technician
                     </h1>
-                    <h2 class="text-2xl text-[#d54d4f] mt-1 uppercase">
+                    <h2 class="text-lg text-[#d54d4f] mt-1 uppercase sm:text-xl lg:text-2xl">
                         Administrative Campus of the GENERALITAT DE CATALUNYA
                     </h2>
 
-                    <p class="text-xl leading-relaxed mt-6">
+                    <p class="text-base leading-relaxed mt-4 sm:text-lg lg:text-xl lg:mt-6">
                         Providing on-site IT support within the administrative district,
                         resolving hardware, software, network, and user-related incidents
                         through a ticket-based support system.
                     </p>
 
-                    <p class="text-xl leading-relaxed mt-5">
+                    <p class="text-base leading-relaxed mt-4 sm:text-lg lg:text-xl lg:mt-5">
                         Managing user account lifecycle processes, including new user
                         registrations and account deactivations, as well as assisting
                         employees with day-to-day technical issues.
                     </p>
 
-                    <p class="text-lg text-[#d54d4f] mt-8 tracking-wide bg-black px-4 py-2 w-fit rounded-lg">
+                    <p class="text-sm text-[#d54d4f] mt-6 tracking-wide bg-black px-3 py-1.5 w-fit rounded-lg sm:text-base lg:text-lg lg:mt-8 lg:px-4 lg:py-2">
                         IT SUPPORT · TICKETING · WINDOWS · HARDWARE · NETWORKING · USER MANAGEMENT
                     </p>
 
                 </div>
-                <div class="col-start-3 col-end-4">
-                    <img src="/job-cards/bsc.png" alt="Generalitat de Catalunya" class="w-full h-130 object-cover object-bottom">
-                    <div class="rotate-270 -translate-y-70 translate-x-30">
+                <div class="lg:col-start-3 lg:col-end-4">
+                    <img src="/job-cards/bsc.png" alt="Generalitat de Catalunya"
+                        class="w-full h-56 object-cover object-bottom sm:h-64 lg:h-130">
+                    <div class="mt-4 lg:mt-0 lg:rotate-270 lg:-translate-y-70 lg:translate-x-30">
                         <h1 class="uppercase">Administrative Campus of the</h1>
                         <h1 class=" italic uppercase">Generalitat de Catalunya</h1>
                         <h1 class=" text-[#d54d4f]">BCN-ESP 41.3566° N, 2.1383° E</h1>
@@ -139,13 +141,50 @@
             </div>
         </div>
         <!-- projects -->
-        <div class="bg-[#d54d4f] mt-20">
-            <div class="p-30 flex justify-end">
-                <h1 id="projects" class="text-6xl italic">PROJECTS</h1>
+        <div class="bg-[#d54d4f] min-h-screen lg:h-screen">
+            <div class="px-5 py-10 flex justify-center sm:px-8 lg:justify-end lg:p-30">
+                <h1 id="projects" class="text-3xl italic lg:text-6xl">PROJECTS</h1>
+            </div>
+            <div class="grid grid-cols-1 gap-6 px-5 pb-10 sm:px-8 lg:grid-cols-2 lg:gap-8 lg:px-50 lg:pb-0">
+                <div class="group relative overflow-hidden">
+                    <img src="/img/diskmap/disk-1.png" alt="DiskMap" class="w-full h-56 object-cover sm:h-64">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex items-end p-5">
+                        <div class="transition-transform duration-1000 ease-out lg:group-hover:-translate-y-2">
+                            <h2 class="text-white text-2xl font-normal uppercase tracking-wide sm:text-3xl lg:text-4xl">DiskMap</h2>
+                            <h3 class="text-base font-normal uppercase text-white opacity-100 max-h-12 translate-y-0 transition-all duration-1000 ease-out sm:text-lg lg:text-2xl lg:opacity-0 lg:max-h-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:max-h-12 lg:group-hover:translate-y-0"> BSC Project with gabaldonlab</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden">
+                    <img src="/img/phylomedb/phy-1.png" alt="PhylomeDB" class="w-full h-56 object-cover object-top sm:h-64">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex items-end p-5">
+                        <div class="transition-transform duration-1000 ease-out lg:group-hover:-translate-y-2">
+                            <h2 class="text-white text-2xl font-normal uppercase tracking-wide sm:text-3xl lg:text-4xl">PhylomeDB</h2>
+                            <h3 class="text-base font-normal uppercase text-white opacity-100 max-h-12 translate-y-0 transition-all duration-1000 ease-out sm:text-lg lg:text-2xl lg:opacity-0 lg:max-h-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:max-h-12 lg:group-hover:translate-y-0"> BSC Project with gabaldonlab</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden">
+                    <img src="/img/patho/patho-1.png" alt="Project" class="w-full h-56 object-cover sm:h-64">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex items-end p-5">
+                        <div class="transition-transform duration-1000 ease-out lg:group-hover:-translate-y-2">
+                            <h2 class="text-white text-2xl font-normal uppercase tracking-wide sm:text-3xl lg:text-4xl">Pathowatch</h2>
+                            <h3 class="text-base font-normal uppercase text-white opacity-100 max-h-12 translate-y-0 transition-all duration-1000 ease-out sm:text-lg lg:text-2xl lg:opacity-0 lg:max-h-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:max-h-12 lg:group-hover:translate-y-0">Final year project</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden">
+                    <img src="/img/music/music-1.png" alt="Project" class="w-full h-56 object-cover sm:h-64">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex items-end p-5">
+                        <div class="transition-transform duration-1000 ease-out lg:group-hover:-translate-y-2">
+                            <h2 class="text-white text-2xl font-normal uppercase tracking-wide sm:text-3xl lg:text-4xl">Music</h2>
+                            <h3 class="text-base font-normal uppercase text-white opacity-100 max-h-12 translate-y-0 transition-all duration-1000 ease-out sm:text-lg lg:text-2xl lg:opacity-0 lg:max-h-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:max-h-12 lg:group-hover:translate-y-0">personal project</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-
 </body>
 
 </html>
