@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+</head>
+
+<body class="bg-zinc-100 font-['IBM_Plex_Sans']">
+    <main>
+        <div class="relative h-screen w-full overflow-hidden">
+            <img src="../img/diskmap/disk-4.png" alt="Disk Map" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/100 via-black/100 to-transparent"></div>
+            <div class="absolute inset-0 px-16 pt-50 text-white">
+                <h2 class="text-7xl font-normal italic tracking-wide">DISKMAP</h2>
+                <p class="mt-8 max-w-5xl text-xl leading-[2] tracking-[0.12em] uppercase">
+                    "Internal web tool developed at the Barcelona Supercomputing Center for the Gabaldon Lab to monitor
+                    and analyze storage quotas on the MareNostrum supercomputer.
+
+                    DiskMap provides a real-time visual overview of how the lab's storage resources are being used. It
+                    allows users to track quota consumption, analyze the number of files and their modification dates,
+                    identify users consuming the most space, and compare storage usage across different projects and
+                    directories.
+
+                    The goal is to turn complex filesystem data into a clear and accessible interface, making it easier
+                    to understand storage usage and identify where the lab's resources are being consumed.""
+                </p>
+            </div>
+            <div class="absolute bottom-100 left-350 right-0 px-16 pb-8 text-white rotate-270">
+                <h1 class="">BARCELONA SUPERCOMPUTING</h1>
+                <h1 class=" italic">CENTER</h1>
+                <h1 class=" text-[#d54d4f]">BCN-ESP 41.3974° N, 2.1312° E</h1>
+            </div>
+        </div>
+        <div class="p-20 mt-30 flex items-center justify-center gap-20">
+            <img src="../img/logos/Svelte_Logo.svg" alt="Svelte" class="w-40 h-40 object-contain">
+            <img src="../img/logos/Typescript_logo_2020.svg" alt="TypeScript" class="w-40 h-40 object-contain">
+            <img src="../img/logos/FastAPI_logo.svg" alt="FastAPI" class="w-40 h-40 object-contain">
+            <img src="../img/logos/Python-logo-notext.svg" alt="Python" class="w-40 h-40 object-contain">
+            <img src="../img/logos/Apache_ECharts_Logo.png" alt="Apache ECharts" class="w-40 h-40 object-contain">
+            <img src="../img/logos/docker-logo-black.png" alt="Docker" class="w-40 h-40 object-contain">
+            <img src="../img/logos/SQLite370.svg" alt="SQLite" class="w-40 h-40 object-contain">
+        </div>
+        <div class="px-20 py-10 flex flex-col items-center justify-center gap-10">
+            <p
+                class="max-w-7xl text-center leading-loose tracking-normal uppercase sm:text-lg lg:text-3xl lg:tracking-wide">
+                We developed DiskMap with the guidance of my mentor and colleague <span class="text-[#d54d4f] underline italic">
+                <a href="https://www.linkedin.com/in/arnau-albert-sánchez-81211826b" target="_blank"
+                        rel="noopener noreferrer">Arnau</a></span>, who helped us understand the
+                MareNostrum environment and determine how to retrieve the required data.
+
+                We worked on both the frontend and backend, creating a clean and easy-to-understand interface for
+                Gabaldon Lab researchers.The backend connects to MareNostrum via SSH to retrieve the required
+                information, while the
+                frontend communicates with the backend through APIs. The backend processes the filesystem data and uses
+                a small database to keep
+                track of thousands of directory paths, automatically updating.
+
+                We also used Apache ECharts with Svelte to turn this data into clear and interactive visualizations,
+                making it easier to understand and diagnose storage quota usage.
+            </p>
+        </div>
+        <section id="showcase" class="relative h-screen overflow-hidden pt-20">
+            <div class="absolute inset-0">
+                <img src="../img/diskmap/disk-1.png" class="disk-image absolute bottom-0 w-full h-auto object-contain">
+                <img src="../img/diskmap/disk-2.png" class="disk-image absolute bottom-0 w-full h-auto object-contain">
+                <img src="../img/diskmap/disk-3.png" class="disk-image absolute bottom-0 w-full h-auto object-contain">
+                <img src="../img/diskmap/disk-4.png" class="disk-image absolute bottom-0 w-full h-auto object-contain">
+                <img src="../img/diskmap/disk-5.png" class="disk-image absolute bottom-0 w-full h-auto object-contain">
+                <img src="../img/diskmap/disk-6.png" class="disk-image absolute bottom-0 w-full h-auto object-contain">
+            </div>
+
+        </section>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+            const images = gsap.utils.toArray(".disk-image");
+            gsap.set(images[0], {
+                xPercent: 0,
+                opacity: 1,
+                zIndex: 1
+            });
+            images.slice(1).forEach((image, index) => {
+                gsap.set(image, {
+                    xPercent: index % 2 === 0 ? 100 : -100,
+                    opacity: 1,
+                    zIndex: index + 2
+                });
+            });
+            const timeline = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#showcase",
+                    start: "top top",
+                    end: `+=${(images.length - 1) * 100}%`,
+                    scrub: 1.2,
+                    pin: true,
+                    anticipatePin: 1
+                }
+            });
+            images.slice(1).forEach((image, index) => {
+
+                const previousImage = images[index];
+
+                timeline
+                    .to(image, {
+                        xPercent: 0,
+                        ease: "power2.out",
+                        duration: 1
+                    })
+                    .to(previousImage, {
+                        opacity: 0,
+                        ease: "power2.out",
+                        duration: 0.5
+                    }, "<0.4");
+            });
+        </script>
+        <footer class="relative bg-black text-white">
+            <div class="px-10 py-16 md:px-20">
+                <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-10">
+                    <div>
+                        <a href="../index.html" class="text-[#d54d4f] text-4xl md:text-5xl font-normal italic tracking-wide">
+                            EMERSON ROJAS
+                        </a>
+                        <p class="mt-4 text-sm text-zinc-500 uppercase tracking-[0.2em]">
+                            Web Developer · IT Support
+                        </p>
+                    </div>
+                    <div class="flex gap-8 text-sm uppercase tracking-wider">
+                        <a href="https://github.com/THEMER12" class="text-zinc-400 hover:text-white transition-colors">
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/emersonrojas21/" class="text-zinc-400 hover:text-white transition-colors">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-16 pt-6 border-t border-zinc-800 flex flex-col md:flex-row justify-between gap-3 text-xs uppercase tracking-wider text-zinc-600">
+                    <p>© 2026 Emerson Rojas</p>
+                <h1 class="text-xs sm:text-4xl lg:text-xs text-[#d54d4f]">BCN-ESP № 22-MMIII</h1>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
