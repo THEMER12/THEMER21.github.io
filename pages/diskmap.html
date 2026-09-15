@@ -10,45 +10,41 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
 </head>
-
 <body class="bg-zinc-100 font-['IBM_Plex_Sans']">
     <main>
-        <div class="relative h-screen w-full overflow-hidden">
-            <img src="../img/diskmap/disk-4.png" alt="Disk Map" class="w-full h-full object-cover">
+        <div class="relative min-h-screen w-full overflow-hidden lg:h-screen">
+            <img src="../img/diskmap/disk-4.png" alt="Disk Map" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-b from-black/100 via-black/100 to-transparent"></div>
-            <div class="absolute inset-0 px-16 pt-50 text-white">
-                <h2 class="text-7xl font-normal italic tracking-wide">DISKMAP</h2>
-                <p class="mt-8 max-w-5xl text-xl leading-[2] tracking-[0.12em] uppercase">
+            <div class="relative z-10 px-5 pt-16 pb-10 text-white sm:px-8 lg:absolute lg:inset-0 lg:px-16 lg:pt-50 lg:pb-0">
+                <h2 class="text-3xl font-normal italic tracking-wide sm:text-5xl lg:text-7xl">DISKMAP</h2>
+                <p class="mt-6 max-w-none text-sm leading-relaxed tracking-wide uppercase sm:text-base lg:mt-8 lg:max-w-5xl lg:text-xl lg:leading-[2] lg:tracking-[0.12em]">
                     "Internal web tool developed at the Barcelona Supercomputing Center for the Gabaldon Lab to monitor
                     and analyze storage quotas on the MareNostrum supercomputer.
-
                     DiskMap provides a real-time visual overview of how the lab's storage resources are being used. It
                     allows users to track quota consumption, analyze the number of files and their modification dates,
                     identify users consuming the most space, and compare storage usage across different projects and
                     directories.
-
                     The goal is to turn complex filesystem data into a clear and accessible interface, making it easier
                     to understand storage usage and identify where the lab's resources are being consumed.""
                 </p>
             </div>
-            <div class="absolute bottom-100 left-350 right-0 px-16 pb-8 text-white rotate-270">
-                <h1 class="">BARCELONA SUPERCOMPUTING</h1>
-                <h1 class=" italic">CENTER</h1>
-                <h1 class=" text-[#d54d4f]">BCN-ESP 41.3974° N, 2.1312° E</h1>
+            <div class="relative z-10 mt-6 px-5 pb-6 text-white sm:px-8 lg:absolute lg:bottom-100 lg:left-350 lg:right-0 lg:mt-0 lg:px-16 lg:pb-8 lg:rotate-270">
+                <h1 class="text-sm lg:text-base">BARCELONA SUPERCOMPUTING</h1>
+                <h1 class="text-sm italic lg:text-base">CENTER</h1>
+                <h1 class="text-sm text-[#d54d4f] lg:text-base">BCN-ESP 41.3974° N, 2.1312° E</h1>
             </div>
         </div>
-        <div class="p-20 mt-30 flex items-center justify-center gap-20">
-            <img src="../img/logos/Svelte_Logo.svg" alt="Svelte" class="w-40 h-40 object-contain">
-            <img src="../img/logos/Typescript_logo_2020.svg" alt="TypeScript" class="w-40 h-40 object-contain">
-            <img src="../img/logos/FastAPI_logo.svg" alt="FastAPI" class="w-40 h-40 object-contain">
-            <img src="../img/logos/Python-logo-notext.svg" alt="Python" class="w-40 h-40 object-contain">
-            <img src="../img/logos/Apache_ECharts_Logo.png" alt="Apache ECharts" class="w-40 h-40 object-contain">
-            <img src="../img/logos/docker-logo-black.png" alt="Docker" class="w-40 h-40 object-contain">
-            <img src="../img/logos/SQLite370.svg" alt="SQLite" class="w-40 h-40 object-contain">
+        <div class="p-6 mt-10 flex flex-wrap items-center justify-center gap-6 sm:gap-10 sm:p-10 lg:flex-nowrap lg:gap-20 lg:p-20 lg:mt-30">
+            <img src="../img/logos/Svelte_Logo.svg" alt="Svelte" class="w-14 h-14 object-contain sm:w-20 sm:h-20 lg:w-40 lg:h-40">
+            <img src="../img/logos/Typescript_logo_2020.svg" alt="TypeScript" class="w-14 h-14 object-contain sm:w-20 sm:h-20 lg:w-40 lg:h-40">
+            <img src="../img/logos/FastAPI_logo.svg" alt="FastAPI" class="w-14 h-14 object-contain sm:w-20 sm:h-20 lg:w-40 lg:h-40">
+            <img src="../img/logos/Python-logo-notext.svg" alt="Python" class="w-14 h-14 object-contain sm:w-20 sm:h-20 lg:w-40 lg:h-40">
+            <img src="../img/logos/Apache_ECharts_Logo.png" alt="Apache ECharts" class="w-14 h-14 object-contain sm:w-20 sm:h-20 lg:w-40 lg:h-40">
+            <img src="../img/logos/docker-logo-black.png" alt="Docker" class="w-14 h-14 object-contain sm:w-20 sm:h-20 lg:w-40 lg:h-40">
+            <img src="../img/logos/SQLite370.svg" alt="SQLite" class="w-14 h-14 object-contain sm:w-20 sm:h-20 lg:w-40 lg:h-40">
         </div>
-        <div class="px-20 py-10 flex flex-col items-center justify-center gap-10">
-            <p
-                class="max-w-7xl text-center leading-loose tracking-normal uppercase sm:text-lg lg:text-3xl lg:tracking-wide">
+        <div class="px-5 py-10 flex flex-col items-center justify-center gap-10 sm:px-8 lg:px-20">
+            <p class="max-w-7xl text-center leading-loose tracking-normal uppercase sm:text-lg lg:text-3xl lg:tracking-wide">
                 We developed DiskMap with the guidance of my mentor and colleague <span class="text-[#d54d4f] underline italic">
                 <a href="https://www.linkedin.com/in/arnau-albert-sánchez-81211826b" target="_blank"
                         rel="noopener noreferrer">Arnau</a></span>, who helped us understand the
@@ -65,7 +61,7 @@
                 making it easier to understand and diagnose storage quota usage.
             </p>
         </div>
-        <section id="showcase" class="relative h-screen overflow-hidden pt-20">
+        <section id="showcase" class="relative hidden h-screen overflow-hidden pt-20 lg:block">
             <div class="absolute inset-0">
                 <img src="../img/diskmap/disk-1.png" class="disk-image absolute bottom-0 w-full h-auto object-contain">
                 <img src="../img/diskmap/disk-2.png" class="disk-image absolute bottom-0 w-full h-auto object-contain">
@@ -74,55 +70,67 @@
                 <img src="../img/diskmap/disk-5.png" class="disk-image absolute bottom-0 w-full h-auto object-contain">
                 <img src="../img/diskmap/disk-6.png" class="disk-image absolute bottom-0 w-full h-auto object-contain">
             </div>
-
+        </section>
+        <section class="px-5 py-10 sm:px-8 lg:hidden">
+            <div class="flex flex-col gap-6">
+                <img src="../img/diskmap/disk-1.png" alt="DiskMap screenshot 1" class="w-full h-auto  object-contain shadow-sm">
+                <img src="../img/diskmap/disk-2.png" alt="DiskMap screenshot 2" class="w-full h-auto  object-contain shadow-sm">
+                <img src="../img/diskmap/disk-3.png" alt="DiskMap screenshot 3" class="w-full h-auto  object-contain shadow-sm">
+                <img src="../img/diskmap/disk-4.png" alt="DiskMap screenshot 4" class="w-full h-auto  object-contain shadow-sm">
+                <img src="../img/diskmap/disk-5.png" alt="DiskMap screenshot 5" class="w-full h-auto  object-contain shadow-sm">
+                <img src="../img/diskmap/disk-6.png" alt="DiskMap screenshot 6" class="w-full h-auto  object-contain shadow-sm">
+            </div>
         </section>
         <script>
             gsap.registerPlugin(ScrollTrigger);
-            const images = gsap.utils.toArray(".disk-image");
-            gsap.set(images[0], {
-                xPercent: 0,
-                opacity: 1,
-                zIndex: 1
-            });
-            images.slice(1).forEach((image, index) => {
-                gsap.set(image, {
-                    xPercent: index % 2 === 0 ? 100 : -100,
-                    opacity: 1,
-                    zIndex: index + 2
-                });
-            });
-            const timeline = gsap.timeline({
-                scrollTrigger: {
-                    trigger: "#showcase",
-                    start: "top top",
-                    end: `+=${(images.length - 1) * 100}%`,
-                    scrub: 1.2,
-                    pin: true,
-                    anticipatePin: 1
-                }
-            });
-            images.slice(1).forEach((image, index) => {
-
-                const previousImage = images[index];
-
-                timeline
-                    .to(image, {
+            ScrollTrigger.matchMedia({
+                "(min-width: 1024px)": function () {
+                    const images = gsap.utils.toArray(".disk-image");
+                    gsap.set(images[0], {
                         xPercent: 0,
-                        ease: "power2.out",
-                        duration: 1
-                    })
-                    .to(previousImage, {
-                        opacity: 0,
-                        ease: "power2.out",
-                        duration: 0.5
-                    }, "<0.4");
+                        opacity: 1,
+                        zIndex: 1
+                    });
+                    images.slice(1).forEach((image, index) => {
+                        gsap.set(image, {
+                            xPercent: index % 2 === 0 ? 100 : -100,
+                            opacity: 1,
+                            zIndex: index + 2
+                        });
+                    });
+                    const timeline = gsap.timeline({
+                        scrollTrigger: {
+                            trigger: "#showcase",
+                            start: "top top",
+                            end: `+=${(images.length - 1) * 100}%`,
+                            scrub: 1.2,
+                            pin: true,
+                            anticipatePin: 1
+                        }
+                    });
+                    images.slice(1).forEach((image, index) => {
+                        const previousImage = images[index];
+
+                        timeline
+                            .to(image, {
+                                xPercent: 0,
+                                ease: "power2.out",
+                                duration: 1
+                            })
+                            .to(previousImage, {
+                                opacity: 0,
+                                ease: "power2.out",
+                                duration: 0.5
+                            }, "<0.4");
+                    });
+                }
             });
         </script>
         <footer class="relative bg-black text-white">
-            <div class="px-10 py-16 md:px-20">
+            <div class="px-5 py-10 sm:px-10 md:px-20 md:py-16">
                 <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-10">
                     <div>
-                        <a href="../index.html" class="text-[#d54d4f] text-4xl md:text-5xl font-normal italic tracking-wide">
+                        <a href="../index.html" class="text-[#d54d4f] text-3xl sm:text-4xl md:text-5xl font-normal italic tracking-wide">
                             EMERSON ROJAS
                         </a>
                         <p class="mt-4 text-sm text-zinc-500 uppercase tracking-[0.2em]">
@@ -138,7 +146,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="mt-16 pt-6 border-t border-zinc-800 flex flex-col md:flex-row justify-between gap-3 text-xs uppercase tracking-wider text-zinc-600">
+                <div class="mt-10 pt-6 border-t border-zinc-800 flex flex-col md:flex-row justify-between gap-3 text-xs uppercase tracking-wider text-zinc-600 md:mt-16">
                     <p>© 2026 Emerson Rojas</p>
                 <h1 class="text-xs sm:text-4xl lg:text-xs text-[#d54d4f]">BCN-ESP № 22-MMIII</h1>
                 </div>
